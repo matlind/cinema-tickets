@@ -99,6 +99,7 @@ export default class TicketService {
     const ticketPaymentService = new TicketPaymentService();
     ticketPaymentService.makePayment(accountId, this.#total_price);
 
-    console.log(`Total number of tickets purchased: ${this.#count_tickets}`);
+    console.log(`Total number of tickets purchased: ${this.#count_tickets} and the total price is £${this.#total_price}`);
+    
   }
 }
